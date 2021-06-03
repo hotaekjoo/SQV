@@ -4,7 +4,7 @@ Our implementation is implemented under [fujimoto's BCQ implementation](https://
 
 
 ## Main Implementation
-### Swapping Q-Value ([Code](https://github.com/nips-anonymous-1955/SQV-pytorch/blob/f172da154b1a131e4d4bb2a6cceb21187c7f29c6/discrete_BCQ/discrete_SQV.py#L120))
+### Swapping Q-Value ([Code](https://github.com/nips-anonymous-1955/SQV/blob/main/discrete_SQV/discrete_SQV.py#L120))
 ```python
 def train_aug_sw(self, replay_buffer):
     # Sample replay buffer
@@ -50,7 +50,7 @@ def train_aug_sw(self, replay_buffer):
 ```
 
 
-### Image Augmentation ([Code](https://github.com/nips-anonymous-1955/SQV-pytorch/blob/f172da154b1a131e4d4bb2a6cceb21187c7f29c6/discrete_BCQ/utils.py#L109))
+### Image Augmentation ([Code](https://github.com/nips-anonymous-1955/SQV/blob/main/discrete_SQV/utils.py#L109))
 ```python
 def aug_trans(self, imgs, out=84):
     imgs = nn.ReplicationPad2d(self.image_pad)(imgs)
